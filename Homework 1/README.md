@@ -1,34 +1,25 @@
-Homework 1: Statistical Learning Foundations and Generative Classifiers
+# Homework 1: Statistical Learning Foundations and Generative Classifiers
 
-Technical Summary of Implementations: 
+## What it covers
 
-  1. Decision Theory and Gaussian Boundary Analysis
+- **Decision theory and Gaussian boundary analysis**
+  - Proved that a randomized decision rule based on posterior probabilities never outperforms the deterministic Bayes decision rule under zero-one loss.
+  - Derived optimal decision thresholds for 1D and 2D Gaussian distributions; sampled and plotted 100 points per class in 2D to visualize how decision boundaries shift with changes in class priors and covariance matrices.
 
-    Bayes Risk Optimization: Formulated a mathematical proof demonstrating that a randomized decision rule based on posterior probabilities underperforms or equals the deterministic Bayes decision rule under a zero-one loss function.
+- **Parameter estimation and linear frameworks**
+  - Derived Maximum Likelihood Estimates for a Bernoulli-based Naive Bayes model (empirical frequencies).
+  - Modeled discrete event counts with a Poisson distribution, computing rolling MLE parameters and subsequent event probabilities.
+  - Proved analytically that maximizing the log-likelihood of linear regression under zero-mean Gaussian noise is equivalent to minimizing Mean Squared Error.
 
-    Parametric Decision Boundaries: Derived optimal decision thresholds for 1D and 2D Gaussian distributions. Sampled and plotted 100 data points per class in a 2D feature space to analyze decision boundary shifts resulting from variations in prior probabilities and covariance matrices.
+- **Text classification**
+  - Built a binary Naive Bayes spam filter from scratch on a subset (10,000 instances) of the TREC Public Spam Corpus.
+  - Applied m-estimate smoothing for out-of-vocabulary terms and log-probability transforms to avoid floating-point underflow; evaluated accuracy across different smoothing scales.
 
-  2. Parameter Estimation and Linear Frameworks
+- **Custom feature engineering**
+  - Designed a rule-based classifier using raw pixel color configurations to distinguish cloud vs. clear-sky images.
+  - Evaluated the pipeline with a confusion matrix, precision, and recall, plus a manual audit of misclassified edge cases.
 
-    Maximum Likelihood Estimation: Derived Bernoulli parameter estimates as empirical frequencies for a Naive Bayes framework.
+## Contents
 
-    Poisson Distribution Modeling: Modeled discrete event data using a Poisson distribution to calculate rolling maximum likelihood parameters and compute subsequent event probabilities.
-
-    Least Squares Derivation: Proved analytically that maximizing the log-likelihood of a linear regression model under zero-mean Gaussian noise is mathematically equivalent to minimizing the Mean Squared Error loss function.
-
-  3. Text Classification
-
-    Spam Filtering Engine: Developed a binary Naive Bayes classifier from scratch using a subset of the TREC Public Spam Corpus (10,000 instances).
-
-    Numerical Optimization: Implemented m-estimate smoothing to manage out-of-vocabulary terms and applied log-probability transformations to prevent floating-point underflow. Evaluated model accuracy across varying smoothing parameter scales.
-
-  4. Custom Feature Engineering
-
-    Image Classification Heuristic: Designed and evaluated a custom rule based on raw pixel color configurations to classify cloud and clear sky images.
-
-    Performance Metrics: Evaluated the custom pipeline using a confusion matrix, precision, and recall, followed by a diagnostic audit of edge-case misclassifications.Technical Summary of Implementations and Derivations
-
-Directory Contents:
-
-  HW1.pdf: Complete analytical report containing step-by-step mathematical proofs, LaTeX equations, and generated decision boundary charts.
-  Images.zip: Dataset assets and generated visual plots for the decision space and model performance analysis.
+- `HW#1.pdf` — complete analytical report: mathematical proofs, derivations, and decision-boundary plots.
+- `Images.zip` — dataset assets and generated plots for the decision-space and classifier performance analysis.
