@@ -1,4 +1,4 @@
-# Final Project — Phase 1: Spoken Language Identification (Proposal)
+# Final Project, Phase 1 - Problem Formulation
 
 Phase 1 of the final project, introducing and scoping a Spoken Language Identification (SLID) system: a model that classifies an input audio signal by language rather than transcribing its content.
 
